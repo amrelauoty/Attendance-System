@@ -1,0 +1,102 @@
+/* * {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: #5eb2b3;
+  font-family: "Poppins", sans-serif;
+}
+fieldset {
+  background: #fff;
+  border: 0;
+  margin: 15vh auto;
+  width: 40vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+fieldset legend {
+  text-align: center;
+  position: relative;
+  top: -3px;
+  color: #fff;
+  background-color: blueviolet;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+fieldset .form-group {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+fieldset .form-group label {
+  color: #555;
+  font-weight: 600;
+}
+fieldset .form-group input {
+  width: 35vw;
+  height: 5vh;
+  outline: 0;
+  text-indent: 10px;
+  color: #555;
+  background-color: #e7e7e7c2;
+  border: 0;
+}
+fieldset input {
+  border: 0;
+  outline: 0;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 15px;
+
+  color: #fff;
+  font-weight: 600;
+  transition: transform 1s ease-in-out;
+}
+
+fieldset #register {
+  cursor: pointer;
+  background-color: blueviolet;
+}
+fieldset #register:hover {
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
+}
+fieldset input:focus {
+  background-color: #bee5e5;
+} */
+body{
+  background-image:url("../images/image.png");
+  background-size: cover;
+}
+.form-group.success input {
+  outline: 2px solid #28B62C;
+}
+.form-group.error input {
+  outline: 2px solid #ff4136;
+}
+.form-group.error .error {
+  font-size: 14px;
+  color: #ff4136;
+}
+.login{
+  font-size: 16px;
+}
+/* @media (max-width:700px)
+{
+  fieldset input
+  {
+    width:100px
+  }
+  fieldset
+  {
+    height:80vh;
+  }
+} */

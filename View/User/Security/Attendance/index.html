@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js" type="module"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href=".">InstaStart</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="."
+                >Home
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+          </ul>
+          <div class="dropdown">
+            <label
+              class="btn text-light dropdown-toggle"
+              id="userfullname"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+            </label>
+            <ul class="dropdown-menu" aria-labelledby="userfullname">
+              <li>
+                <a class="dropdown-item" href="../Profile/index.html"
+                  >Profile</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../Attendance/index.html"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="logout">
+                <a class="dropdown-item" href="">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row vh-100 d-flex flex-column justify-content-center" style="background-color:rgba(255,255,255,0.3)">
+        <div class="col-md-4 col-8 offset-md-4 offset-2 mx-auto">
+          <div class="card">
+            <div class="card-header text-light" style="background:darkred">Employees' Attendance</div>
+            <div class="card-body">
+              <form class="form">
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    class="form-control border-1 border-dark"
+                    list="users"
+                  />
+                  <div class="error text-danger"></div>
+                </div>
+                <datalist id="users"> </datalist>
+                <input
+                  type="submit"
+                  value="Confirm Attendance"
+                  id="confirm"
+                  class="form-control btn btn-outline-primary my-3"
+                />
+              </form>
+            </div>
+          </div>
+
+          <!-- <div class="user">
+          <label for="username">Username: </label>
+          <div class="containerUser form-group">
+          <input type="text" id="username" name="username" list="users" />
+          
+        </div>
+        <datalist id="users" >
+        </datalist>
+      </div>
+      
+      <input type="button" id="confirm" name="confirm" value="Confirm Attendance" /> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
